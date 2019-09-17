@@ -1,0 +1,10 @@
+to build, run in terminal within assignment directory:
+	make clean
+	make all
+	./test-basic
+
+		OR for LRU:
+	./test-lru
+
+		OR for predictor:
+	./test-predictor
