@@ -1,0 +1,13 @@
+Warren Payne
+
+simple_char_driver.c
+    this file contains the logic for read, write, open, close, and seek functionalities
+
+helloModule.c
+    contains the given logic for the hello world functionality
+
+simple_driver_test.c
+    contains a test program that interracts with the device file simple_char_driver.c
+
+Makefile
+	contains the logic to create module objects for helloModule and simple_char_driver
