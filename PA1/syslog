@@ -1,0 +1,99 @@
+Jun  9 02:12:45 cu-cs-vm rsyslogd: [origin software="rsyslogd" swVersion="8.16.0" x-pid="798" x-info="http://www.rsyslog.com"] rsyslogd was HUPed
+Jun  9 02:13:11 cu-cs-vm systemd-timesyncd[448]: Timed out waiting for reply from 91.189.89.199:123 (ntp.ubuntu.com).
+Jun  9 02:13:14 cu-cs-vm anacron[835]: Job `cron.daily' terminated
+Jun  9 02:13:14 cu-cs-vm anacron[835]: Normal exit (1 job run)
+Jun  9 02:13:23 cu-cs-vm kernel: [  373.398920] hello world
+Jun  9 02:13:29 cu-cs-vm kernel: [  379.496957] BUG: unable to handle kernel paging request at 00007ffd595f089c
+Jun  9 02:13:29 cu-cs-vm kernel: [  379.496971] IP: sys_Simple_add+0x9/0x30
+Jun  9 02:13:29 cu-cs-vm kernel: [  379.496974] PGD 80000001e2f23067 P4D 80000001e2f23067 PUD 232199067 PMD 2130bd067 PTE 800000015cdae867
+Jun  9 02:13:29 cu-cs-vm kernel: [  379.496982] Oops: 0003 [#2] SMP PTI
+Jun  9 02:13:29 cu-cs-vm kernel: [  379.496986] Modules linked in: kvm_intel kvm irqbypass crct10dif_pclmul crc32_pclmul ghash_clmulni_intel pcbc aesni_intel aes_x86_64 crypto_simd vmw_balloon glue_helper cryptd intel_rapl_perf joydev input_leds serio_raw shpchp i2c_piix4 mac_hid vmw_vsock_vmci_transport vsock vmw_vmci binfmt_misc parport_pc ppdev lp parport autofs4 vmwgfx ttm drm_kms_helper syscopyarea sysfillrect sysimgblt fb_sys_fops drm hid_generic e1000 psmouse mptspi usbhid mptscsih hid mptbase ahci libahci scsi_transport_spi pata_acpi
+Jun  9 02:13:29 cu-cs-vm kernel: [  379.497035] CPU: 0 PID: 2447 Comm: a.out Tainted: G      D          4.15.18revision2 #6
+Jun  9 02:13:29 cu-cs-vm kernel: [  379.497037] Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 04/13/2018
+Jun  9 02:13:29 cu-cs-vm kernel: [  379.497041] RIP: 0010:sys_Simple_add+0x9/0x30
+Jun  9 02:13:29 cu-cs-vm kernel: [  379.497044] RSP: 0018:ffffc18e83317f28 EFLAGS: 00010206
+Jun  9 02:13:29 cu-cs-vm kernel: [  379.497047] RAX: ffffffffbae6fb80 RBX: ffffc18e83317f58 RCX: 000000000000000a
+Jun  9 02:13:29 cu-cs-vm kernel: [  379.497050] RDX: 00007ffd595f089c RSI: 0000000000000003 RDI: 0000000000000007
+Jun  9 02:13:29 cu-cs-vm kernel: [  379.497052] RBP: ffffc18e83317f48 R08: 00007f597ce0eab0 R09: 0000000000400650
+Jun  9 02:13:29 cu-cs-vm kernel: [  379.497054] R10: 0000000000000000 R11: 0000000000000000 R12: 0000000000000000
+Jun  9 02:13:29 cu-cs-vm kernel: [  379.497056] R13: 0000000000000000 R14: 0000000000000000 R15: 0000000000000000
+Jun  9 02:13:29 cu-cs-vm kernel: [  379.497060] FS:  00007f597d001700(0000) GS:ffff9d74b5600000(0000) knlGS:0000000000000000
+Jun  9 02:13:29 cu-cs-vm kernel: [  379.497062] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+Jun  9 02:13:29 cu-cs-vm kernel: [  379.497065] CR2: 00007ffd595f089c CR3: 0000000213ea4001 CR4: 00000000003606f0
+Jun  9 02:13:29 cu-cs-vm kernel: [  379.497129] Call Trace:
+Jun  9 02:13:29 cu-cs-vm kernel: [  379.497138]  ? do_syscall_64+0x73/0x130
+Jun  9 02:13:29 cu-cs-vm kernel: [  379.497143]  entry_SYSCALL_64_after_hwframe+0x3d/0xa2
+Jun  9 02:13:29 cu-cs-vm kernel: [  379.497147] RIP: 0033:0x7f597cb354d9
+Jun  9 02:13:29 cu-cs-vm kernel: [  379.497149] RSP: 002b:00007ffd595f0888 EFLAGS: 00000206 ORIG_RAX: 000000000000014e
+Jun  9 02:13:29 cu-cs-vm kernel: [  379.497153] RAX: ffffffffffffffda RBX: 0000000000000000 RCX: 00007f597cb354d9
+Jun  9 02:13:29 cu-cs-vm kernel: [  379.497155] RDX: 00007ffd595f089c RSI: 0000000000000003 RDI: 0000000000000007
+Jun  9 02:13:29 cu-cs-vm kernel: [  379.497157] RBP: 00007ffd595f08b0 R08: 00007f597ce0eab0 R09: 0000000000400650
+Jun  9 02:13:29 cu-cs-vm kernel: [  379.497159] R10: 00000000004006c0 R11: 0000000000000206 R12: 00000000004004e0
+Jun  9 02:13:29 cu-cs-vm kernel: [  379.497162] R13: 00007ffd595f0990 R14: 0000000000000000 R15: 0000000000000000
+Jun  9 02:13:29 cu-cs-vm kernel: [  379.497164] Code: 90 90 0f 1f 44 00 00 55 48 c7 c7 6e 93 ec bb 48 89 e5 e8 db 01 08 00 31 c0 5d c3 90 90 90 90 90 90 90 0f 1f 44 00 00 8d 0c 37 55 <89> 0a 48 89 e5 89 f2 89 fe 48 c7 c7 80 93 ec bb e8 b2 01 08 00 
+Jun  9 02:13:29 cu-cs-vm kernel: [  379.497215] RIP: sys_Simple_add+0x9/0x30 RSP: ffffc18e83317f28
+Jun  9 02:13:29 cu-cs-vm kernel: [  379.497217] CR2: 00007ffd595f089c
+Jun  9 02:13:29 cu-cs-vm kernel: [  379.497221] ---[ end trace d0e7754bac2cf75e ]---
+Jun  9 02:13:43 cu-cs-vm systemd-timesyncd[448]: Synchronized to time server 91.189.91.157:123 (ntp.ubuntu.com).
+Jun  9 02:17:01 cu-cs-vm kernel: [  591.643245] BUG: unable to handle kernel paging request at 00007fffa4a396bc
+Jun  9 02:17:01 cu-cs-vm kernel: [  591.643282] IP: sys_Simple_add+0x9/0x30
+Jun  9 02:17:01 cu-cs-vm kernel: [  591.643286] PGD 80000001eee1c067 P4D 80000001eee1c067 PUD 214dde067 PMD 213270067 PTE 8000000165dc9867
+Jun  9 02:17:01 cu-cs-vm kernel: [  591.643293] Oops: 0003 [#3] SMP PTI
+Jun  9 02:17:01 cu-cs-vm kernel: [  591.643296] Modules linked in: kvm_intel kvm irqbypass crct10dif_pclmul crc32_pclmul ghash_clmulni_intel pcbc aesni_intel aes_x86_64 crypto_simd vmw_balloon glue_helper cryptd intel_rapl_perf joydev input_leds serio_raw shpchp i2c_piix4 mac_hid vmw_vsock_vmci_transport vsock vmw_vmci binfmt_misc parport_pc ppdev lp parport autofs4 vmwgfx ttm drm_kms_helper syscopyarea sysfillrect sysimgblt fb_sys_fops drm hid_generic e1000 psmouse mptspi usbhid mptscsih hid mptbase ahci libahci scsi_transport_spi pata_acpi
+Jun  9 02:17:01 cu-cs-vm kernel: [  591.643340] CPU: 0 PID: 2483 Comm: a.out Tainted: G      D          4.15.18revision2 #6
+Jun  9 02:17:01 cu-cs-vm kernel: [  591.643342] Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 04/13/2018
+Jun  9 02:17:01 cu-cs-vm kernel: [  591.643346] RIP: 0010:sys_Simple_add+0x9/0x30
+Jun  9 02:17:01 cu-cs-vm kernel: [  591.643349] RSP: 0018:ffffc18e81fcff28 EFLAGS: 00010206
+Jun  9 02:17:01 cu-cs-vm kernel: [  591.643351] RAX: ffffffffbae6fb80 RBX: ffffc18e81fcff58 RCX: 000000000000000a
+Jun  9 02:17:01 cu-cs-vm kernel: [  591.643354] RDX: 00007fffa4a396bc RSI: 0000000000000003 RDI: 0000000000000007
+Jun  9 02:17:01 cu-cs-vm kernel: [  591.643356] RBP: ffffc18e81fcff48 R08: 00007ff51e573ab0 R09: 0000000000400650
+Jun  9 02:17:01 cu-cs-vm kernel: [  591.643358] R10: 0000000000000000 R11: 0000000000000000 R12: 0000000000000000
+Jun  9 02:17:01 cu-cs-vm kernel: [  591.643360] R13: 0000000000000000 R14: 0000000000000000 R15: 0000000000000000
+Jun  9 02:17:01 cu-cs-vm kernel: [  591.643363] FS:  00007ff51e766700(0000) GS:ffff9d74b5600000(0000) knlGS:0000000000000000
+Jun  9 02:17:01 cu-cs-vm kernel: [  591.643365] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+Jun  9 02:17:01 cu-cs-vm kernel: [  591.643367] CR2: 00007fffa4a396bc CR3: 0000000213b6c003 CR4: 00000000003606f0
+Jun  9 02:17:01 cu-cs-vm kernel: [  591.643452] Call Trace:
+Jun  9 02:17:01 cu-cs-vm kernel: [  591.643459]  ? do_syscall_64+0x73/0x130
+Jun  9 02:17:01 cu-cs-vm kernel: [  591.643465]  entry_SYSCALL_64_after_hwframe+0x3d/0xa2
+Jun  9 02:17:01 cu-cs-vm kernel: [  591.643468] RIP: 0033:0x7ff51e29a4d9
+Jun  9 02:17:01 cu-cs-vm kernel: [  591.643470] RSP: 002b:00007fffa4a396a8 EFLAGS: 00000202 ORIG_RAX: 000000000000014e
+Jun  9 02:17:01 cu-cs-vm kernel: [  591.643473] RAX: ffffffffffffffda RBX: 0000000000000000 RCX: 00007ff51e29a4d9
+Jun  9 02:17:01 cu-cs-vm kernel: [  591.643475] RDX: 00007fffa4a396bc RSI: 0000000000000003 RDI: 0000000000000007
+Jun  9 02:17:01 cu-cs-vm kernel: [  591.643477] RBP: 00007fffa4a396d0 R08: 00007ff51e573ab0 R09: 0000000000400650
+Jun  9 02:17:01 cu-cs-vm kernel: [  591.643479] R10: 00000000004006c0 R11: 0000000000000202 R12: 00000000004004e0
+Jun  9 02:17:01 cu-cs-vm kernel: [  591.643481] R13: 00007fffa4a397b0 R14: 0000000000000000 R15: 0000000000000000
+Jun  9 02:17:01 cu-cs-vm kernel: [  591.643484] Code: 90 90 0f 1f 44 00 00 55 48 c7 c7 6e 93 ec bb 48 89 e5 e8 db 01 08 00 31 c0 5d c3 90 90 90 90 90 90 90 0f 1f 44 00 00 8d 0c 37 55 <89> 0a 48 89 e5 89 f2 89 fe 48 c7 c7 80 93 ec bb e8 b2 01 08 00 
+Jun  9 02:17:01 cu-cs-vm kernel: [  591.643528] RIP: sys_Simple_add+0x9/0x30 RSP: ffffc18e81fcff28
+Jun  9 02:17:01 cu-cs-vm kernel: [  591.643530] CR2: 00007fffa4a396bc
+Jun  9 02:17:01 cu-cs-vm kernel: [  591.643533] ---[ end trace d0e7754bac2cf75f ]---
+Jun  9 02:17:01 cu-cs-vm CRON[2485]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Jun  9 02:17:44 cu-cs-vm uptimed: moving up to position 12: 0 days, 00:10:35
+Jun  9 02:19:15 cu-cs-vm systemd-timesyncd[448]: Timed out waiting for reply from 91.189.91.157:123 (ntp.ubuntu.com).
+Jun  9 02:19:25 cu-cs-vm systemd-timesyncd[448]: Timed out waiting for reply from 91.189.94.4:123 (ntp.ubuntu.com).
+Jun  9 02:19:35 cu-cs-vm systemd-timesyncd[448]: Timed out waiting for reply from 91.189.89.198:123 (ntp.ubuntu.com).
+Jun  9 02:19:46 cu-cs-vm systemd-timesyncd[448]: Timed out waiting for reply from 91.189.89.199:123 (ntp.ubuntu.com).
+Jun  9 02:20:37 cu-cs-vm dhclient[964]: DHCPREQUEST of 192.168.245.131 on ens33 to 192.168.245.254 port 67 (xid=0x1bcf67d0)
+Jun  9 02:20:37 cu-cs-vm dhclient[964]: DHCPACK of 192.168.245.131 from 192.168.245.254
+Jun  9 02:20:37 cu-cs-vm NetworkManager[866]: <info>  [1560068437.4067]   address 192.168.245.131
+Jun  9 02:20:37 cu-cs-vm NetworkManager[866]: <info>  [1560068437.4077]   plen 24 (255.255.255.0)
+Jun  9 02:20:37 cu-cs-vm NetworkManager[866]: <info>  [1560068437.4079]   gateway 192.168.245.2
+Jun  9 02:20:37 cu-cs-vm NetworkManager[866]: <info>  [1560068437.4079]   server identifier 192.168.245.254
+Jun  9 02:20:37 cu-cs-vm NetworkManager[866]: <info>  [1560068437.4080]   lease time 1800
+Jun  9 02:20:37 cu-cs-vm NetworkManager[866]: <info>  [1560068437.4080]   nameserver '192.168.245.2'
+Jun  9 02:20:37 cu-cs-vm NetworkManager[866]: <info>  [1560068437.4081]   domain name 'localdomain'
+Jun  9 02:20:37 cu-cs-vm NetworkManager[866]: <info>  [1560068437.4081]   wins '192.168.245.2'
+Jun  9 02:20:37 cu-cs-vm NetworkManager[866]: <info>  [1560068437.4082] dhcp4 (ens33): state changed bound -> bound
+Jun  9 02:20:37 cu-cs-vm dbus[837]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service'
+Jun  9 02:20:37 cu-cs-vm systemd[1]: Starting Network Manager Script Dispatcher Service...
+Jun  9 02:20:37 cu-cs-vm dhclient[964]: bound to 192.168.245.131 -- renewal in 772 seconds.
+Jun  9 02:20:37 cu-cs-vm dbus[837]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Jun  9 02:20:37 cu-cs-vm systemd[1]: Started Network Manager Script Dispatcher Service.
+Jun  9 02:20:37 cu-cs-vm nm-dispatcher: req:1 'dhcp4-change' [ens33]: new request (1 scripts)
+Jun  9 02:20:37 cu-cs-vm nm-dispatcher: req:1 'dhcp4-change' [ens33]: start running ordered scripts...
+Jun  9 02:21:02 cu-cs-vm systemd-timesyncd[448]: Timed out waiting for reply from 91.189.94.4:123 (ntp.ubuntu.com).
+Jun  9 02:21:13 cu-cs-vm systemd-timesyncd[448]: Timed out waiting for reply from 91.189.89.198:123 (ntp.ubuntu.com).
+Jun  9 02:21:13 cu-cs-vm systemd-timesyncd[448]: Synchronized to time server 91.189.89.199:123 (ntp.ubuntu.com).
+Jun  9 02:22:35 cu-cs-vm systemd[1]: Starting Cleanup of Temporary Directories...
+Jun  9 02:22:35 cu-cs-vm systemd-tmpfiles[2638]: [/usr/lib/tmpfiles.d/var.conf:14] Duplicate line for path "/var/log", ignoring.
+Jun  9 02:22:35 cu-cs-vm systemd[1]: Started Cleanup of Temporary Directories.
+Jun  9 02:23:04 cu-cs-vm kernel: [  955.357810] hello world

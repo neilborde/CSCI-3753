@@ -1,0 +1,36 @@
+Name: Warren Payne, 109096207, wapa1274@colorado.edu
+
+Simple_add.c
+/home/kernel/linux-hwe-4.15.0/arch/x86/kernel/Simple_add.c
+Contains the simple addition logic. It prints out the two numbers entered and those two numbers summed. Finally, it returns 0
+
+helloworld.c
+/home/kernel/linux-hwe-4.15.0/arch/x86/kernel/helloworld.c
+Contains the logic for the hello world function.
+
+Makefile
+/home/kernel/linux-hwe-4.15.0/arch/x86/kernel/Makefile
+Added obj-y += helloworld.o AND obj-y += Simple_add.o
+
+syscalls.h
+/home/kernel/linux-hwe-4.15.0/include/linux/syscalls.h
+Contains declorations and prototypes for system calls used within the kernel.
+Added asmlinkage long sys_Simple_add(int number1, int number2, int* result);
+AND asmlinkage long sys_helloworld(void);
+
+syscall_64
+/home/kernel/linux-hwe-4.15.0/arch/x86/entry/syscalls/syscall_64.tbl
+Contains all of the names of the system calls and their calling numbers.
+
+syslog
+/var/log/syslog
+contains all the printk messages from the system calls
+
+userspace.c   -  helloworld test
+to use: 
+1. gcc userspace.c
+2. ./a.out
+
+add_test.c      -   Simple_add test
+1. gcc Simple_add.c
+2. ./a.out
